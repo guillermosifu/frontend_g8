@@ -1,0 +1,15 @@
+table{
+    border: 2px solid red;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+th, td{
+    
+    border: 1px solid red;
+}
+
+th{
+    font-weight: bold;
+}
+
