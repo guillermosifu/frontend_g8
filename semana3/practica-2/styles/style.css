@@ -133,7 +133,7 @@ img {
 
 .header nav ul a:hover span {
   background-color: #87119A;
-  width: 100%;
+  width: 50%;
   z-index: 10;
 }
 
