@@ -133,7 +133,7 @@ img {
 
 .header nav ul a:hover span {
   background-color: #87119A;
-  width: 50%;
+  width: 100%;
   z-index: 10;
 }
 
@@ -203,8 +203,3 @@ img {
   font-weight: 600;
 }
 
-/*@import "./home";
-@import "./services";
-@import "./portafolio";
-@import "./footer";*/
-/*# sourceMappingURL=style.css.map */

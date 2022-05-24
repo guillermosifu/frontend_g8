@@ -1,0 +1,36 @@
+header{
+    background-color: red;
+
+}
+section{
+    background-color: aqua;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*aca inicia responsive*/
+
+
+@media only screen and (max-width: 600px) {
+    header{
+        background-color: black;
+    }
+    section{
+        background-color: blue;
+        color: red;
+    }
+    div{
+
+    }
+}
