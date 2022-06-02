@@ -118,15 +118,17 @@ if (edadMayor === 18 || nombreMayor === "Juan") {
 
 // ** Consejo: Traten de no usar mucho el else
 
-// Escriban un algoritmo que pida
-// 3 numeros usando prompt e impriman el numero mayor
+//escribe un algoritmo que pida 3 numero, usando prompt
+//e imprime el numero mayor
 
-// booleanos
-// true || false
+const numerouno= +prompt("Ingrese un numero1")
+const numerodos= +prompt("Ingrese un numero2")
+const numerotres= +prompt("Ingrese un numero3")
 
-let numero;
-let numero2;
-numero=prompt('Ingrese Numero1:');
-numero2=prompt('Ingrese Numero2:');
-document.write('El resutaldo es ');
-document.write(parseInt(numero) + parseInt(numero2));
+let mensajeresultado= "Numero 3 es mayor",
+
+if(numerouno>numerodos && numerouno>numerotres) {
+mensaje="Numero 1 es mayor"}
+
+else if(numerodos>numerotres && numerodos>numerotres) {
+  mensaje="Numero 2 es mayor"}
