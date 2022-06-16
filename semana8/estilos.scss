@@ -1,0 +1,57 @@
+@import"./variables.scss";
+
+body{
+    margin-top: 0px;
+    padding: 10px;
+    background-color: blue;
+    width: 500px;
+    height: 500px;
+}
+
+h1{
+    color: $color-principal;
+    padding: $padding-1;
+    
+}
+
+@mixin guille($bg:green, $color-text:#fff){
+    background-color:$bg ;
+    padding:$padding-1 ;
+    border-radius: $padding-1;
+    color: $color-text;
+    margin-bottom: $padding-1;
+    
+}
+
+.succes{
+    //aca en de hacer estiles llamo al mixin
+    @include guille($bg:yellow);
+}
+.info{
+    @include guille();
+}
+
+// asi como los mixin retorna una porcion tambien pueden regresar una clse directa 
+// el proposito de esto es generar codigo completo es de decir desde dla creacion de su clase
+
+@mixin generation-icons($name, $icon ,$color ,$size,$border){
+ // de esta forma concatenamos un texto con una variable en SASS
+
+ .div-icon-#{$name}{
+    background: url("./ICONS/#{$icon}");
+    border: solid 2px $color;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: $size;
+    height: $size;
+    margin-bottom: 10px;
+    border-radius:$border;  
+ }
+
+
+
+}
+@include generation-icons("phone","phone.jpeg",pink ,400px,8px);
+@include generation-icons("mail","mail.jpeg",red ,400px,8px );
+@include generation-icons("search","search.png",aqua ,400px,8px );
+@include generation-icons("laptop","laptop.png",yellow ,400px,20px);

@@ -1,0 +1,13 @@
+//variable en sass
+// en sass podemos usar en guardar colores -fuentes -atributos  varios
+// la forma en la que creamos la variables 
+// $nombreVariable: valor 
+
+// en sass se recomienda usar en las variables (-)
+
+$color-principal: rgb(131, 218, 73);
+$color-red:rgba(231, 28, 28, 0.897);
+$padding-1:10px;
+$bg:green;
+
+//toda variable se puede usar en cualquier de parte de nuestro archivo
